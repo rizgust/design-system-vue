@@ -1,0 +1,14 @@
+// IMPORTANT: This import path should _not_ be used outside our source tree
+// as `src` directory is _not_ meant to be shipped in our NPM package.
+// Use e.g. `@import '~carbon-components/scss/globals/scss/styles.scss'` instead.
+
+$css--font-face: false;
+$css--body: false;
+$css--reset: false;
+// @import '~carbon-components/core/globals/scss/css--helpers'; // SEE THE NOTE ABOVE
+@import '../../core/assets/styles/theme.scss';
+
+.bx--tabs--container ~ div {
+  height: 320px;
+  background-color: $rds-ui-01;
+}

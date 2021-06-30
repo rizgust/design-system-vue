@@ -1,0 +1,14 @@
+<template>
+  <option :class="`rds-select-option ${carbonPrefix}--select-option`">
+    <slot></slot>
+  </option>
+</template>
+
+<script>
+import { carbonPrefixMixin } from '../../mixins';
+export default {
+  name: 'RdsSelectOption',
+  mixins: [carbonPrefixMixin],
+  // HTML props disabled selected hidden
+};
+</script>
