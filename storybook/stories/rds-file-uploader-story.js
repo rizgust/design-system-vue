@@ -130,22 +130,6 @@ for (const story of storySet) {
       sv-alt-back
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call focus() method" active-label-prefix="Call blur() method in" />
-        <div v-if="vModelOrEvents">
-          <ul>V-Model value</span>
-            <li v-for="(item, index) in storyFiles" :key="index" style="list-style: initial;">
-              <span>{{item.file.name}}: {{item.file.size}}</span>
-              <button @click="setState(index, '')">No state</button>
-              <button @click="setState(index, 'uploading')">uploading</button>
-              <button @click="setState(index, 'complete')">complete</button>
-              <button @click="toggleInvalidState(index)">toggle invalid</button>
-              <button @click="remove(index)">remove</button>
-            </li>
-          </ul>
-        </div>
-        <button v-if="vModelOrEvents" @click="clear">Clear</button>
-      </template>
     </sv-template-view>
   `;
 

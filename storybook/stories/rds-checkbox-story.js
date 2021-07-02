@@ -91,22 +91,6 @@ for (const story of storySet) {
       :sv-alt-back="!this.$options.propsData.light"
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call focus() method" active-label-prefix="Call blur() method in" />
-        <div v-if="${templateString.indexOf('v-model') > 0}">
-          <br>
-          <br>
-          <span>
-            V-model:
-          </span>
-          <label>Check 1:
-            <input type="checkbox" value="check-1" v-model="modelValue">
-          </label>
-          <br>
-          <br>
-          <span>Checked: {{ modelValue }}</span>
-        </div>
-      </template>
     </sv-template-view>
   `;
 
@@ -174,27 +158,6 @@ for (const story of storySet) {
       sv-source='${templateString.trim()}'>
       <p>This story only demonstrates the array syntax for v-model</p>
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <div v-if="${templateString.indexOf('v-model') > 0}">
-          <br>
-          <br>
-          <span>
-            V-model:
-          </span>
-          <label>Check 1:
-            <input type="checkbox" value="check-1" v-model="checks">
-          </label>
-          <label>Check 2:
-            <input type="checkbox" value="check-2" v-model="checks">
-          </label>
-          <label>Check 3:
-            <input type="checkbox" value="check-3" v-model="checks">
-          </label>
-          <br>
-          <br>
-          <span>Checked: {{ checks }}</span>
-        </div>
-      </template>
     </sv-template-view>
   `;
 

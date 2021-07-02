@@ -112,9 +112,6 @@ for (const story of storySet) {
       sv-source='${templateString.trim()}'
       sv-position="center"
       >
-      <template slot="other">
-      <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Show" active-label-prefix="Hide in" />
-      </template>
       <template slot="component">${templateString}</template>
     </sv-template-view>
   `;

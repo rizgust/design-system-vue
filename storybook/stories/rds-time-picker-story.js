@@ -180,26 +180,6 @@ for (const story of storySet) {
       :sv-alt-back="!this.$options.propsData.light"
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call focus() method" active-label-prefix="Call blur() method in" />
-        <div v-if="${templateString.indexOf('.sync') > 0}">
-          <label>time:
-            <input type="text" v-model="timeSync" />
-          </label>
-          <label>Ampm:
-            <select v-model="ampmSync">
-              <option value="AM">AM</option>
-              <option value="PM">PM</option>
-            </select>
-          </label>
-          <label>Timezone:
-            <select v-model="timezoneSync">
-              <option value="timezone1">Timezone 1</option>
-              <option value="timezone2">Timezone 2</option>
-            </select>
-          </label>
-        </div>
-      </template>
     </sv-template-view>
   `;
 

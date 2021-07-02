@@ -97,22 +97,6 @@ for (const story of storySet) {
       sv-margin
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call item 1 focus() method" active-label-prefix="Call item 1 blur() method in" />
-        <div>
-          <p>Open items</p>
-          <label>1 <input type="checkbox" v-model="open[0]"></label>
-          <label>2 <input type="checkbox" v-model="open[1]"></label>
-          <label>3 <input type="checkbox" v-model="open[2]"></label>
-          <label>4 <input type="checkbox" v-model="open[3]"></label>
-        </div>
-        <br/>
-        <label>Single open only after on change<input type="checkbox" v-model="oneOnly" /></label>
-        <p>Listen for change events and run one of the following lines of code.</p>
-        <pre v-highlightjs="snippet">
-          <code class="json"></code>
-        </pre>
-      </template>
     </sv-template-view>
   `;
 

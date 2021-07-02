@@ -111,15 +111,6 @@ for (const story of storySet) {
       sv-margin
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-
-      <template slot="other">
-        <div v-if="${templateString.indexOf('v-model') > 0}">
-          Selected value ''{{listVal}}''
-          <input type="radio" value="value-1" v-model="listVal" group="story">Radio 1</input>
-          <input type="radio" value="value-2" v-model="listVal" group="story">Radio 2</input>
-          <input type="radio" value="value-3" v-model="listVal" group="story">Radio 3</input>
-        </div>
-      </template>
     </sv-template-view>
   `;
 

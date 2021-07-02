@@ -79,7 +79,6 @@ for (const story of storySet) {
       sv-margin
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-      <template slot="other">Search value: {{searchInput}}</template>
     </sv-template-view>
   `;
 

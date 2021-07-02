@@ -22,11 +22,6 @@
       />
       <slot name="component"></slot>
     </section>
-
-    <section class="sv-template-view__other" :style="otherStyle">
-      <h2 class="sv-template-view__label">Sample interaction</h2>
-      <slot name="other"></slot>
-    </section>
     <section class="sv-template-view__code" :style="otherStyle">
       <h2 class="sv-template-view__label">Sample code</h2>
       <pre v-highlightjs="svSource">

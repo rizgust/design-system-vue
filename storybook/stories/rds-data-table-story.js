@@ -469,10 +469,6 @@ for (const story of storySet) {
       sv-source='${templateString.trim()}'
       >
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <p>NOTE: Sorting and filtering are the responsibility of the component user. This component raises events to facilitate this.</p>
-        <p>NOTE 2: Selection supports v-model via the rowSelects property and row-select-changes.</p>
-      </template>
     </sv-template-view>
   `;
 

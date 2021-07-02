@@ -87,15 +87,6 @@ for (const story of storySet) {
       sv-margin
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-
-      <template slot="other">
-        <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call focus() method" active-label-prefix="Call blur() method in" />
-        <div v-if="${templateString.indexOf('v-model') > 0}">V-Model:
-          <input type="radio" value="value-1" v-model="radioVal" group="story">Radio 1</input>
-          <input type="radio" value="value-2" v-model="radioVal" group="story">Radio 2</input>
-          <input type="radio" value="value-3" v-model="radioVal" group="story">Radio 3</input>
-        </div>
-      </template>
     </sv-template-view>
   `;
 

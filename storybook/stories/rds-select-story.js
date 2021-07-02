@@ -126,20 +126,6 @@ for (const story of storySet) {
       :sv-alt-back="!this.$options.propsData.light"
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-
-      <template slot="other">
-        <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call focus() method" active-label-prefix="Call blur() method in" />
-        <div v-if="${templateString.indexOf('v-model') > 0}">
-          <span>V-Model value</span>
-            <select v-model="selectValue" >
-              <option value="rds-select-option1">rds-select-option 1</option>
-              <option value="rds-select-option2">rds-select-option 2</option>
-              <option value="rds-select-option3">rds-select-option 3</option>
-              <option value="rds-select-option4">rds-select-option 4</option>
-            </select>
-          </span>
-        </div>
-      </template>
     </sv-template-view>
   `;
 

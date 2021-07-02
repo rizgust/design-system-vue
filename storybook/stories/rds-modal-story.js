@@ -285,10 +285,6 @@ for (const story of storySet) {
       sv-margin
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-      <template slot="other">
-      <button @click="doStart">Call show() only</button>
-      <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call show() method and then hide()" active-label-prefix="Call hide() method in" />
-      </template>
     </sv-template-view>
   `;
 

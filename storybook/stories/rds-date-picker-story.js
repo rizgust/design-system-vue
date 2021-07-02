@@ -179,21 +179,6 @@ for (const story of storySet) {
         :sv-alt-back="!this.$options.propsData.light"
         sv-source='${templateString.trim()}'>
         <template slot="component">${templateString}</template>
-        <template slot="other">
-          <div v-if="${templateString.indexOf('v-model') >= 0 && templateString.indexOf('range') < 0}">
-            <label>Date:
-              <input type="text" v-model="modelValue" />
-            </label>
-          </div>
-          <div v-if="${templateString.indexOf('v-model') >= 0 && templateString.indexOf('range') > 0}">
-            startDate: {{modelValue2.startDate}}
-            <br>
-            endDate: {{modelValue2.endDate}}
-            <br>
-            <button @click="addDay('startDate')" class="start">Start + 1 day</button>
-            <button @click="addDay('endDate')">End + 1 day</button>
-          </div>
-        </template>
       </sv-template-view>
     `;
 

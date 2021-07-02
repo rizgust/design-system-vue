@@ -102,9 +102,6 @@ for (const story of storySet) {
       sv-padding="150px 0 50px 0"
       >
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call focus() method" active-label-prefix="Call blur() method in" />
-      </template>
     </sv-template-view>
   `;
 

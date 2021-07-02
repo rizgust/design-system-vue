@@ -130,12 +130,6 @@ for (const story of storySet) {
       sv-margin
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <button @click="changeSet">Change set</button>
-        <button @click="addToSet()">Add to set</button>
-        <button @click="addToSet(true)">Add to set & select</button>
-        <button @click="removeFromSet">Remove from set</button>
-      </template>
     </sv-template-view>
   `;
 

@@ -62,9 +62,6 @@ for (const story of storySet) {
       <template slot="component" ref="component">
         ${templateString}
       </template>
-      <template slot="other">
-        <button @click="makeActive" :disabled="isActive">{{buttonLabel}}</button>
-      </template>
     </sv-template-view>
   `;
 

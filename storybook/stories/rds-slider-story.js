@@ -114,15 +114,6 @@ for (const story of storySet) {
       :sv-alt-back="!this.$options.propsData.light"
       sv-source='${templateString.trim()}'>
       <template slot="component">${templateString}</template>
-      <template slot="other">
-        <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call focus() method" active-label-prefix="Call blur() method in" />
-        <div v-if="${templateString.indexOf('v-model') > 0}">
-          <label>Model value:
-            <input type="text" v-model="modelValue" />
-          </label>
-        </div>
-        <div>Note rds-slider defaults to min: 0, max: 100, value: Math.floor((min + max) / 2). This is consistent with standard slider when submitted.</div>
-      </template>
     </sv-template-view>
   `;
 

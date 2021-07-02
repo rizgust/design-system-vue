@@ -206,27 +206,7 @@ for (const story of storySet) {
     :sv-alt-back="!this.$options.propsData.light"
     sv-source='${templateString.trim()}'>
     <template slot="component">${templateString}</template>
-    <template slot="other">
-    <TimerButton @timer-start="doStart" @timer-end="doEnd" label="Call focus() method" active-label-prefix="Call blur() method in" />
-    <div v-if="${templateString.indexOf('v-model') > 0}">
-      <br>
-      <br>
-      <span>
-        V-model:
-      </span>
-      <span v-for="fruit in options">
-        <label :style="{whiteSpace: 'nowrap'}">{{fruit.label}}:
-          <input type="checkbox" :value="fruit.value" v-model="checks">
-        </label>,
-      </span>
-      <br>
-      <br>
-      <span>Checked: {{ checks }}</span>
-    </div>
-    <pre v-else>
-    :options: fruits
-    </pre>
-  </template>  </sv-template-view>
+  </sv-template-view>
   `;
 
       return {

@@ -219,12 +219,6 @@ for (const story of storySet) {
         sv-margin
         sv-source='${templateString.trim()}'>
         <template slot="component">${templateString}</template>
-        <template slot="other">
-          <p>NOTE: Until SVG2 using a non-symbol SVG path with use does not work. Using img tags has styling issues.</p>
-          <br />
-          <p>Svg String</p>
-          <p v-if="exampleIconSvgString" v-text="exampleIconSvgString" />
-        </template>
       </sv-template-view>
     `;
 
@@ -274,9 +268,6 @@ for (const story of storySet) {
         sv-margin
         sv-source='${templateString.trim()}'>
         <template slot="component">${templateString}</template>
-        <template slot="other">
-          <p>NOTE: Until SVG2 using a non-symbol SVG path with use does not work. Using img tags has styling issues.</p>
-        </template>
       </sv-template-view>
     `;
 
